@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,24 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container from-cointer">
-        <h2>Add new pet</h2>
-        <from action="insert_pet.php" method="POST">
-            <label> pet name </label>
-            <input type="text" name="pet_name" required>
-            <label>Pet Type</label>
-            <input type="text" name="pet_type" required>
-            <label> Bread </label>
-            <input type="text" name="breed" required>
-            <label>Age </label>
-            <input type="number" name="age" required>
-            <label>owner name </label>
-            <input type="text" name="owner_phone" required>
-            <button type="submit" class="btn save-btn">Save Pet</button>
-    </form>
+    <div class="container form-container">
+        <h2>Add New Pet</h2>
 
-    <a href="index.php" class="back-link">Back to Home</a>
-</div>
+        <form action="insert_pet.php" method="POST">
+            <label for="pet_name">Pet Name</label>
+            <input type="text" id="pet_name" name="pet_name" required>
+
+            <label for="pet_type">Pet Type</label>
+            <input type="text" id="pet_type" name="pet_type" required>
+
+            <label for="breed">Breed</label>
+            <input type="text" id="breed" name="breed" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="0" required>
+
+            <label for="owner_name">Owner Name</label>
+            <input type="text" id="owner_name" name="owner_name" required>
+
+            <label for="owner_phone">Owner Phone</label>
+            <input type="text" id="owner_phone" name="owner_phone" required>
+
+            <button type="submit" class="btn save-btn">Save Pet</button>
+        </form>
+
+        <a href="index.php" class="back-link">Back to Home</a>
+    </div>
 </body>
 </html>
-            

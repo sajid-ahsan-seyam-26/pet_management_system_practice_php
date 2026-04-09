@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container center-box">
+        <h1>Pet Care Management System</h1>
+        <p class="subtitle">Simple PHP CRUD project for managing pet records</p>
 
-<div class="container">
-    <h1>Pet Care Management System</h1>
-    <p class="subtitle">Simple semi-professional PHP project for beginners</p>
-
-    <div class="menu">
-        <a href="add_pet.php" class="btn">Add New Pet</a>
-        <a href="view_pets.php" class="btn">View All Pets</a>
+        <div class="menu">
+            <a href="add_pet.php" class="btn">Add New Pet</a>
+            <a href="view_pets.php" class="btn secondary">View All Pets</a>
+        </div>
     </div>
-</div>
-
 </body>
 </html>
